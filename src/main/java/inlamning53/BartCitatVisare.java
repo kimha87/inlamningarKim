@@ -1,14 +1,21 @@
 package inlamning53;
 
 public class BartCitatVisare {
+  private String quote ="";
   BartCitatVisare(){}
   
-  BartCitatVisare(int a, String b) {
-    String temp;
-    for (int i = 0; i < a; i++) {
-      temp = b +"\n";
+  BartCitatVisare(int howManytimes, String writeWhat) {
+    setQuote(writeWhat);
+    for (int i = 0; i < howManytimes; i++) {
+      getQuote();
     }
-    return temp;
+  }
+  
+  public void setQuote(String writeWhat){
+    quote = writeWhat;    
+  }
+  public void getQuote(){
+    System.out.println(quote);
   }
   
 
