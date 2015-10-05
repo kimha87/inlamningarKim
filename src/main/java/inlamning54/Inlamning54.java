@@ -10,7 +10,7 @@ public class Inlamning54 {
     // Instansierar ett nytt objekt av klassen flagga
     Flagga flags = new Flagga();
     // Loop som räknar upp landen i ordning
-    for(int i = 0; i<5; i++) {
+    for (int i = 0; i < 5; i++) {
       System.out.println(flags.getCountry(i) + flags.getColors(i));
     }
     System.exit(0);
