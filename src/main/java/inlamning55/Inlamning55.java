@@ -7,18 +7,18 @@ import java.io.UnsupportedEncodingException;
 public class Inlamning55 {
 	public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 		
-		PrintWriter resultat = new PrintWriter("src/main/java/inlamning55/resultat.txt");
-		resultat.println("Resultat Skriv3cMatte141001");
-		resultat.println("Maxpoäng 60");
-		resultat.println("G gräns 20");
-		resultat.println("VG gräns 40");
-		resultat.println("Namn				Poäng	Betyg");
-		resultat.println("========================================");
+		PrintWriter pelle = new PrintWriter("resultat.txt");
+		pelle.println("Resultat Skriv3cMatte141001");
+		pelle.println("Maxpoäng 60");
+		pelle.println("G gräns 20");
+		pelle.println("VG gräns 40");
+		pelle.println("Namn				Poäng	Betyg");
+		pelle.println("========================================");
 		Tentamen tent = new Tentamen();
-		resultat.println(tent.getPerson(tent.max));
-		resultat.println(tent.getPerson(tent.bo));
-		resultat.println(tent.getPerson(tent.stina));
-		resultat.close();
+		pelle.println(tent.getPerson(tent.max));
+		pelle.println(tent.getPerson(tent.bo));
+		pelle.println(tent.getPerson(tent.stina));
+		pelle.close();
 		System.exit(0);
 		
 		

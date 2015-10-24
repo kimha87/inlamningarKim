@@ -1,16 +1,34 @@
 package inlamning55;
 
 public class Tentamen {
-	String[] max = { "Max von Sydow", "23", "G" };
-	String[] bo = { "Bo Ko", "12", "IG" };
-	String[] stina = { "Stina Lind", "51", "VG" };
 
-	public String getPerson(String[] name) {
-		String all ="";
-		for (String n : name) {
-			all += n;
+  private int gLimit;
+  private int vgLimit;
+  String[] students;
+  int[] testScore;
+  private int counter = 1;
+
+  public Tentamen(int gLimit, int vgLimit, int numberOfStudents) {
+    students = new String[numberOfStudents];
+    testScore = new int[numberOfStudents];
+    this.gLimit = gLimit;
+    this.vgLimit = vgLimit;
+  }
+
+  public String getGrade(int grade) {
+		String s ="";
+		if (grade >= vgLimit) {
+			s = "VG";
+		} else if (grade >= gLimit) {
+			s = "G";
+		} else {
+			s = "IG";
 		}
-		return all;
+		return s;
 	}
 
-}
+  public void setStudentName(String currentStudent){
+    
+  }
+
+}}
